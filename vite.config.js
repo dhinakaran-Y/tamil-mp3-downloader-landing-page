@@ -1,6 +1,7 @@
 import { resolve } from "path";
 
 export default {
+  // base: "/Free-Mp3-downloader/",
   root: resolve(__dirname, "src"),
   build: {
     outDir: "../dist",
