@@ -14,13 +14,13 @@
 
 <body class="text-white">
 
-    <a href="#header" class="position-fixed bottom-0 end-0 bg-primary text-white rounded-circle z-3 p-2 m-3" id="top-nav"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
+    <a href="#header" class="position-fixed bottom-0 end-0 bg-primary shadow-lg text-white rounded-circle z-3 d-sm-block p-1 p-sm-2 m-3" id="top-nav"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35"
         viewBox="0 0 24 24">
         <path fill="currentColor"
             d="m12 10.8l-3.9 3.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.6-4.6q.3-.3.7-.3t.7.3l4.6 4.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275z" />
     </svg></a>
     <header class="container" id="header">
-        <nav class="navbar navbar-expand-lg bg-transparent">
+        <nav class="navbar navbar-expand-md bg-transparent">
             <div class="container-fluid">
                 <div class="">
                 <a class="navbar-brand fw-semibold" href="#">Free-Mp3-Downloader</a>
@@ -52,25 +52,34 @@
             </div>
         </nav>
     </header>
-     <hr class="bg-primary m-0 p-0">
+     <hr class="bg-primary w-100 m-0 p-0">
      <main class="container">
         <!-- hero -->
         <section class="container d-grid text-center mt-3">
             <div class="row">
-            <div class="col text-center justify-content-center d-flex flex-column align-items-center">
-                <h2 class="hero--h1">Download <span class="text-primary">100+</span></h2>
-                <h3 class="hero--h2 w-50">songs in just One <span class="color-change">Click</span></h3>
-                <a href="https://github.com/anburocky3/tamil-mp3-downloader/releases/latest/download/tamil-mp3-downloader-v2.0.0.exe" class="btn btn-lg rounded-pill fw-bolder btn-outline-light mt-4"> Download Now</a>
+            <div class="col-12 col-sm-7 col-lg-8 text-center justify-content-center d-flex flex-column align-items-center">
+                <!-- 1 -->
+                <h2 class="h1 d-sm-none">Download <span class="text-primary">100+</span></h2>
+                <h2 class="hero--h1 d-none d-sm-block">Download <span class="text-primary">100+</span></h2>
+                <!-- 2 -->
+                <h3 class="w-75 d-sm-none">songs in just One <span class="color-change">Click</span></h3>
+                <h3 class="hero--h2 w-50 d-none d-sm-block">songs in just One <span class="color-change">Click</span></h3>
+                <!-- 3 -->
+                <a href="https://github.com/anburocky3/tamil-mp3-downloader/releases/latest/download/tamil-mp3-downloader-v2.0.0.exe" class="btn rounded-pill fw-bolder btn-outline-light mt-2 d-sm-none"> Download Now</a>
+                <a href="https://github.com/anburocky3/tamil-mp3-downloader/releases/latest/download/tamil-mp3-downloader-v2.0.0.exe" class="btn btn-lg rounded-pill fw-bolder btn-outline-light mt-4 d-none d-sm-block"> Download Now</a>
             </div>
-            <div class="col">
-                <img class="" height="400px" src="./Images/girl-black&white.png" alt="hero">
+            <div class="col-12 col-sm-5 col-lg-4 mt-sm-5 mt-lg-0">
+                <img class="w-75 my-3 d-sm-none" src="./Images/girl-black&white.png" alt="hero">
+                <img class="d-none d-sm-block d-lg-none" height="300px" src="./Images/girl-black&white.png" alt="hero">
+                <img class="d-none d-lg-block" height="400px" src="./Images/girl-black&white.png" alt="hero">
             </div>
             </div>
         </section>
 
         <!-- about -->
-        <section class="container position-relative d-flex" id="about" style="height: 400px;">
-            <hr class="w-25 position-absolute start-0 top-50">
+        <section class="container position-relative d-flex" id="about" >
+            <hr class="d-none d-md-block d-lg-none position-absolute start-0 top-50 z-0" width="90px">
+            <hr class="d-none d-lg-block w-25 position-absolute start-0 top-50 z-0">
                 <!-- <div class="mx-auto ps-5 z-1 card bg-transparent border-0 d-flex" style="width: 20rem;">
                     <img src="./Images/left-e.png" class="h-50 w-100" id="permanentPopover" data-bs-toggle="popover"
                         data-bs-placement="left" data-bs-custom-class="custom-popover" data-bs-html="true" data-bs-content="<p>Hii ,Are you wasting time on searching songs and download individually.</p>
@@ -83,10 +92,10 @@
                     </div>
                     <img class="h-50 w-100" src="./Images/right-e-a.png">
                 </div> -->
-                <div class="card mx-auto z-1 bg-transparent border-0" style="max-width: 540px; margin-top:100px;">
-                    <div class="row g-0">
+                <div class="card mx-auto z-1 bg-transparent border-0" id="about-card">
+                    <div class="row g-0 h-100">
                         <div class="col-md-3">
-                            <img src="./Images/left-e.png" class="img-fluid rounded-start h-50" alt="...">
+                            <img src="./Images/left-e.png" class="img-fluid rounded-start h-50 d-none d-md-block" alt="...">
                         </div>
                         <div class="col-md-6 h-50">
                             <div class="card-body text-white text-opacity-75 fs-5">
@@ -95,15 +104,16 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <img src="./Images/right-e.png" class="img-fluid rounded-start h-50" alt="...">
+                            <img src="./Images/right-e.png" class="img-fluid rounded-start h-50 d-none d-md-block" alt="...">
                         </div>
                     </div>
                 </div>
-           <hr class="w-25 position-absolute end-0 top-50 z-0">
+           <hr class="d-none d-md-block d-lg-none position-absolute end-0 top-50 z-0" width="90px">
+           <hr class="d-none d-lg-block w-25 position-absolute end-0 top-50 z-0">
         </section>
 
                 <!-- features -->
-        <section class="mx-auto  col-8" id="features">
+        <section class="mx-auto  col-8 col-md-12 col-xl-9" id="features">
             <h2 class="h1 text-center fw-bold my-4">Features</h2>
             <div class="row justify-content-center g-3">
                 <!-- 1 -->
@@ -177,7 +187,7 @@
         
         <!-- Install-user -->
         
-        <section class="my-5 mx-auto w-75" id="install">
+        <section class="my-5 mx-auto w-75" id="user-install">
             <h2 class="h1 text-center fw-bold my-4">How to Install & Run?</h2>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <!-- 1 -->
@@ -286,7 +296,7 @@
 
         <!-- developer -->
 
-        <section class="my-5 mx-auto w-75" id="install">
+        <section class="my-5 mx-auto w-75" id="developer-install">
             <h2 class="h1 text-center fw-bold my-4">For Developers</h2>
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <!-- 1 -->
@@ -401,7 +411,7 @@
         <!-- works -->
         <section class="my-5 mx-auto w-75" id="works">
             <h2 class="h1 text-center fw-bold my-4">How it Works?</h2>
-            <div class="border border-primary p-3 mx-auto w-75 rounded shadow">
+            <div class="border border-primary p-3 mx-auto w-75 rounded shadow" id="inner-works">
                 <ul>
                    <li>The all music data are fetched from <a href="https://friendstamilmp3.in" target="_blank">Friends Tamil Mp3</a></li>
                    <li>The URL data are stored as json data in the data folder in repository.</li>
@@ -414,11 +424,11 @@
         </section>
 
         <!-- more -->
-        <section class="container grid my-5 py-5 col-9">
+        <section class="container grid my-md-5 py-md-5 col-9">
         
         <!-- f1 -->
-        <div class="row align-items-center">
-        <div class="card border-0 text-start text-white bg-transparent m-3 col-5" style="max-width: 18rem;">
+        <div class="row align-items-center mb-sm-4">
+        <div class="card border-0 text-start text-white bg-transparent m-sm-3 col-12 col-md-5" style="max-width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title h4 fw-semibold">50k+</h5>
                 <p class="card-text h5 fw-normal">Users are using the platform to download and hear the music</p>
@@ -429,7 +439,7 @@
         <!-- f2 -->
         <div class="row align-items-center g-5">
         <div class="col-sm-auto flex-fill text-center"></div>
-        <div class="card border-0 text-center text-white bg-transparent m-3 col-5" style="max-width: 18rem;">
+        <div class="card border-0 text-center text-white bg-transparent m-sm-3 col-md-6" style="max-width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title h4 fw-semibold mb-3">Available Platforms</h5>
                 <div class="container">
@@ -490,11 +500,11 @@
 
     <footer class="pt-2 my-4 text-white-50 border-top border-primary-subtle border-opacity-25">
         <ul class="nav justify-content-center">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50 border-1 border-primary-subtle border-end">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50 border-1 border-primary-subtle border-end"> How its works ?</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white-50">How to Install ?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white text-opacity-75 border-1 border-primary-subtle border-end">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white text-opacity-75 border-1 border-primary-subtle border-end"> How its works ?</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white text-opacity-75 ">How to Install ?</a></li>
         </ul>
-        <p class="text-center text-white-50">© 2025 Free-Mp3-Downloader, Copyrights.</p>
+        <p class="text-center text-white text-opacity-75 ">© 2025 Free-Mp3-Downloader, Copyrights.</p>
     </footer>
 </body>
 </html>

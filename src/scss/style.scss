@@ -1,13 +1,8 @@
-$primary : #6f2cf4 ;
+// $primary : #6f2cf4 ;
+$primary : #a12cf4 ;
 // $gradient-color-1 : linear-gradient(to bottom, #08203e, #103783);
-$gradient-color : linear-gradient(to bottom, #210d45, #422282 , #693cc4);
-
-$bd-violet: #712cf9;
-$bd-violet-bg: $bd-violet;
-$bd-violet-rgb: 113, 44, 249;
-:root{
---bd-violet-bg : #6f2cf4;
-}
+// $gradient-color : linear-gradient(to bottom, #210d45, #422282 , #693cc4);
+$gradient-color : linear-gradient(to bottom, #210d45, #56098d , #a12cf4);
 
 
 @import "bootstrap/scss/bootstrap";
@@ -66,15 +61,8 @@ backdrop-filter: blur(10px);
 .wrapper::before {
   position: absolute;
   content: "";
-  // background-image: linear-gradient(
-  //   to bottom,
-  //   rgba(54, 25, 79, 0.875),
-  //   rgba(64, 38, 86, 0.719),
-  //   rgba(44, 28, 57, 0.807),
-  //   rgba(42, 26, 55, 0.868),
-  //   rgba(0, 0, 0, 0.937),
-  // );
-  background-image: linear-gradient(to bottom, #210d45d7, #422282d2 , #09070ef0);
+  // background-image: linear-gradient(to bottom, rgba(54, 25, 79, 0.875), rgba(64, 38, 86, 0.719), rgba(44, 28, 57, 0.807), rgba(42, 26, 55, 0.868),rgba(0, 0, 0, 0.937));
+  background-image: linear-gradient(to bottom, #210d45d7, #4b047ed2 , #09070ef0);
   width: 100%;
   height: 100%;
   top: 0;
@@ -94,17 +82,7 @@ backdrop-filter: blur(10px);
   // border-color: black !important;
 }
 
-
-// background: linear-gradient(
-//           to bottom,
-//           #000000 0%,
-//           #09020b 20%,
-//           #14041b 40%,
-//           #2e0d46 60%,
-//           #3f1161 80%,
-//           #3f115b 100%
-//         );
-
+// background: linear-gradient( to bottom,  #000000 0%, #09020b 20%,  #14041b 40%, #2e0d46 60%, #3f1161 80%, #3f115b 100%);
 
 .accordion-header{
   border: none !important;
@@ -118,6 +96,70 @@ backdrop-filter: blur(10px);
    border: 1px solid whitesmoke;
 }
 
-.about-card {
-  height: 200px;
+#about-card {
+  max-width: 540px;
+  margin-top:200px;
 }
+
+@media (max-width: 576px) {
+ #about-card{
+  margin-top: 0;
+  min-width: 70%;
+  margin-bottom: 2rem;
+ }
+
+ #user-install{
+  width: 90% !important;
+ }
+
+ #developer-install {
+  width: 90% !important;
+ }
+
+ #works {
+  width: 90% !important;
+ }
+
+ #inner-works {
+  width: 100% !important;
+ }
+}
+
+@media (max-width: 767px){
+#about-card{
+  margin-top: 0;
+  min-width: 60%;
+  margin-bottom: 2rem;
+ }
+}
+
+@media (min-width: 767px) and (max-width: 1000px){
+  #user-install{
+  width: 90% !important;
+ }
+
+ #developer-install {
+  width: 90% !important;
+ }
+
+ #works {
+  width: 90% !important;
+ }
+
+ #inner-works {
+  width: 100% !important;
+ }
+}
+
+@media (min-width:576px) and (max-width:1000px) {
+  .hero--h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.hero--h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+}
+
