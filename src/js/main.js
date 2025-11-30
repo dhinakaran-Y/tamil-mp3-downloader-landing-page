@@ -9,13 +9,13 @@ import * as bootstrap from 'bootstrap'
 //   (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
 // );
 
-document.addEventListener("DOMContentLoaded", function () {
-  var popoverTriggerEl = document.getElementById("permanentPopover");
-  // Initialize the popover instance
-  var popover = new bootstrap.Popover(popoverTriggerEl, {
-    trigger: "manual", // Set trigger to manual
-  });
+// document.addEventListener("DOMContentLoaded", function () {
+//   var popoverTriggerEl = document.getElementById("permanentPopover");
+//   // Initialize the popover instance
+//   var popover = new bootstrap.Popover(popoverTriggerEl, {
+//     trigger: "manual", // Set trigger to manual
+//   });
 
-  // Manually show the popover
-  popover.show();
-});
+//   // Manually show the popover
+//   popover.show();
+// });
